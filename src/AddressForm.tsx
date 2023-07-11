@@ -22,6 +22,7 @@ export function AddressForm({
     <FormWrapper title="Address">
       <label>Street</label>
       <input
+      className="border border-black rounded-md p-1"
         autoFocus
         required
         type="text"
@@ -30,6 +31,7 @@ export function AddressForm({
       />
       <label>City</label>
       <input
+      className="border border-black rounded-md p-1"
         required
         type="text"
         value={city}
@@ -37,6 +39,7 @@ export function AddressForm({
       />
       <label>State</label>
       <input
+      className="border border-black rounded-md p-1"
         required
         type="text"
         value={state}
@@ -44,6 +47,7 @@ export function AddressForm({
       />
       <label>Zip</label>
       <input
+      className="border border-black rounded-md p-1"
         required
         type="text"
         value={zip}

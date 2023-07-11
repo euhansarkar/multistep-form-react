@@ -20,6 +20,7 @@ export function UserForm({
     <FormWrapper title="User Details">
       <label>First Name</label>
       <input
+      className="border border-black rounded-md p-1"
         autoFocus
         required
         type="text"
@@ -28,6 +29,7 @@ export function UserForm({
       />
       <label>Last Name</label>
       <input
+      className="border border-black rounded-md p-1"
         required
         type="text"
         value={lastName}
@@ -35,6 +37,7 @@ export function UserForm({
       />
       <label>Age</label>
       <input
+      className="border border-black rounded-md p-1"
         required
         min={1}
         type="number"

@@ -1,13 +1,13 @@
-import { FormWrapper } from "./FormWrapper"
+import { FormWrapper } from "./FormWrapper";
 
 type AccountData = {
-  email: string
-  password: string
-}
+  email: string;
+  password: string;
+};
 
 type AccountFormProps = AccountData & {
-  updateFields: (fields: Partial<AccountData>) => void
-}
+  updateFields: (fields: Partial<AccountData>) => void;
+};
 
 export function AccountForm({
   email,
@@ -16,21 +16,23 @@ export function AccountForm({
 }: AccountFormProps) {
   return (
     <FormWrapper title="Account Creation">
-      <label>Email</label>
+      <label>Email:</label>
       <input
+        className="border border-black rounded-md p-1"
         autoFocus
         required
         type="email"
         value={email}
-        onChange={e => updateFields({ email: e.target.value })}
+        onChange={(e) => updateFields({ email: e.target.value })}
       />
       <label>Password</label>
       <input
+        className="border border-black rounded-md p-1"
         required
         type="password"
         value={password}
-        onChange={e => updateFields({ password: e.target.value })}
+        onChange={(e) => updateFields({ password: e.target.value })}
       />
     </FormWrapper>
-  )
+  );
 }
